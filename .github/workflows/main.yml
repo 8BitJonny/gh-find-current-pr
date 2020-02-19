@@ -13,4 +13,4 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Get the pr number
-        run: echo "The time was ${{ steps.hello.outputs.pr }}"
+        run: echo "The PR was ${{ steps.hello.outputs.pr }}"
