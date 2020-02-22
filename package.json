@@ -17,12 +17,12 @@
     "pull request",
     "PR"
   ],
-  "author": "Jason Walton",
+  "author": "Timon Christiansen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jwalton/gh-find-current-pr/issues"
+    "url": "https://github.com/8BitJonny/gh-find-current-pr/issues"
   },
-  "homepage": "https://github.com/jwalton/gh-find-current-pr#readme",
+  "homepage": "https://github.com/8BitJonny/gh-find-current-pr#readme",
   "dependencies": {
     "@actions/core": "^1.1.0",
     "@actions/github": "^1.1.0"

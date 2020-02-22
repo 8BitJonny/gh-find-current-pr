@@ -1,5 +1,5 @@
 name: Find Current Pull Request
-author: jwalton
+author: 8BitJonny
 description: Find a PR associated with the current commit.
 inputs:
   github-token:

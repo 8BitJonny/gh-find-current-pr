@@ -1,5 +1,7 @@
 # gh-find-current-pr
 
+Based on jwalton/gh-find-current-pr but finds only open PRs
+
 This action tries to figure out the current PR.
 
 If the event is a `pull_request`, it's very easy to get the current PR number
@@ -7,7 +9,7 @@ from the context via `${{ github.event.number }}`, but unfortunately this
 information does not seem to be readily available for a `push` event.  This
 action sends a request to GitHub to find the PR associated with the current SHA,
 and returns its number in the `number` output. `number` will be an empty string if there is no
-PR.
+PR or the PR has been already closed.
 
 Additionnaly, `title` and `body` outputs are available as well to get the respective title and body of the PR.
 
@@ -16,7 +18,7 @@ Additionnaly, `title` and `body` outputs are available as well to get the respec
 ```yaml
     steps:
       - uses: actions/checkout@v1
-      # Find the PR associated with this push, if there is one.
+      # Find the PR associated with this push, if there is one and it is open.
       - uses: jwalton/gh-find-current-pr@v1
         id: findPr
         with:
