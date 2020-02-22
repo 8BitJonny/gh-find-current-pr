@@ -1,4 +1,4 @@
-name: Find Current Pull Request
+name: Find Current Open Pull Request
 author: 8BitJonny
 description: Find a PR associated with the current commit.
 inputs:
