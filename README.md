@@ -1,6 +1,6 @@
 # gh-find-current-pr
 
-Based on jwalton/gh-find-current-pr but finds only open PRs
+Based on https://github.com/jwalton/gh-find-current-pr but finds only open PRs
 
 This action tries to figure out the current PR.
 
